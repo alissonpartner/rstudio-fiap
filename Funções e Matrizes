@@ -1,0 +1,71 @@
+ # Funções
+
+#Estruturas de uma função: 
+#1° criamos um nome para a função
+#2° chamamos a clausa function a fim de informar ao r que esta variavel sera uma função
+#3° Informamos os argumentos, por exemplo conta de soma é feita por 1 número + outro número ou (a+b)
+#4° dentro dos colchetes colocamos os nomes usados no argumento da função (a,b) porém agora colocamos eles juntos a operação
+#4.1° que seria algo como {a+b},{a-b},{a*b},{a/b}
+
+minha_func_potencia <- function(x, potencia){x^potencia}
+minha_func_potencia(3,3)
+
+func_soma <- function(x,y){x+y}
+func_soma (23,3)
+
+func_sub <- function(x,y){x-y}
+func_sub (10,33)
+
+func_mult <- function(c,y){c*y}
+func_mult (2,3)
+
+func_div <- function(a,b){a/b}
+func_div (10,4)
+
+
+func_soma1 <- function (a,b,c){a+b+c}
+func_soma1(10,20,30)
+func_soma1(10,20)
+
+# Vetores
+#1° Estrutura de um vetor, muito simples, primeiro declaramos o nome da variavel que vai receber o vetor
+#2° usamos a letra c antes de informar os registros do vetor, o c é sempre padrão
+#3° encerrado a clausula
+
+vetor1 <- c(1,5,7,3,8,10)
+vetor1
+vetor2 <- c(2,10,14,6,16,20)
+vetor2
+#operações com os vetores
+vetor1 + vetor2
+vetor1 ^ vetor2
+
+
+#Vetores com números aleatórios quebrados 
+vetorA <- runif(n= 6, min = 9, max = 10)
+vetorA
+#Estrutura do runif 
+#1° declarar o nome da variavel >>> 2° usar a clausula runif e dentro dos parenteses vamos por os argumentos
+#2° n = x (esse representa a quantidade de números que queremos colocar no nosso vetor)
+#3° min = x (representa qual vai ser o número inicial para o vetor)
+#4° max = x (representa o maior número dentro do nosso vetor)
+
+
+#vetores com números aleatórios inteiros
+vetorB <- sample(x = 1:15, size = 5)
+vetorB
+#Estrutura de um vetor com números aleatórios inteiros
+#1° declarar o nome da variavel >>>> usar a claúsula sample
+#2° (x = x:X ) este representa o range de números, no caso do exemplo acima, significa que o n° inicial é 1 e o número limite é 15
+# ou seja os números aleatórios seram de 1 a 15 
+#3° size = x (este é o tamanho final do vetor) o vetor tera 5 números aleatórios inteiros
+
+vetorC <- runif(n = 5, min = 1, max = 2)
+vetorC
+
+vetorD <- sample(x = 1:20, size = 5)
+vetorD
+
+vetorC * vetorD
+
+
